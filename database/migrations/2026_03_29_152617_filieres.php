@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('candidats', function (Blueprint $table) {
-            $table->id();
-            $table->bigInteger("user_id");
-            $table->string('codefil');
-            $table->foreign("user_id")->references("id")->on("users");
-            $table->foreign("codefil")->references('codefil')->on("filieres");
+        Schema::create('filieres', function (Blueprint $table) {
+            $table->string('codefil')->primary();
+            $table->string('nom');
         });
     }
 

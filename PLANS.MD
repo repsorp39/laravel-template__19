@@ -13,5 +13,15 @@
 - add ```@vite(['resources/css/app.css', 'resources/js/app.js'])``` to your files
 
 
-2. 
+2. Update databases migrations to match the exam table
+
+3. Create seeds when required
+
+- php artisan make:seed SeedName
+- register seed 
+- run it: `php artisan db:seed`
+
+
+
+
 
